@@ -1,0 +1,81 @@
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {  /* class de la DIV englobant la DIV avant le formulaire */
+  /* lien vers l'image '*/
+  background-image: url("../img/med2.jpg");
+  
+  /***************test****************/
+  /*background-color: greenyellow;*/
+  /******equivalent container de bootstrap*****************************/
+  /*width:50%;  
+  margin:0 auto; /*comme width est à 50% le auto s'adapte en mettant la même marge des deux côté'*/
+  /****************************/
+  min-height: 380px;
+  /*width: 100%*/
+  /* Positionnement et echelle  */
+  background-position: center;
+  background-repeat: repeat;/*no-repeat;*/
+  background-size: cover; /* contain fait apparaitre toute l'image mais moins grande que la div */
+  position: relative; /*relative, absolute, fixed ou sticky */
+  padding: 10px;
+}
+
+/* class de la DIV avant le form*/
+.containerForm {   
+  position: absolute; /* top bottom left right se font par rapport à l'élément englobant qui lui est forcément relative*/
+  right:  0; /* Positionnement à droite essayer avec left */
+  margin: 20px; /* marge de la DIV containerForm par rapport à son parent DIV bg-img*/
+  height: 90%;
+  max-width: 300px;
+  padding: 16px;  /* marge pour les éléments internes cad les zones du formulaire */
+  background-color: white;
+}
+
+.test{ /*class sur form pour test de la taille du form*/
+     background-color: red;
+     /*padding: 0px;
+     height: 90%;
+     margin: 10px;*/
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px; /* marge à l'intérieur par rapport au contenu ce qui revient donc à la taille' */
+  margin: 5px 0 22px 0; /*haut droite bas gauche => sens des aiguilles*/
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* style pour le bouton submit */
+.btn {
+  background-color: #94d7f4; /* vert #04AA6D;*/
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+
+/* survole du bouton */
+.btn:hover {
+  opacity: 1;  /* complètement opaque change aussi la couleur des caractère de blanc à noire */
+}
+
+h2 {
+    color: #1d79dc; /* Bleu un peu plus foncé que le bouton btn*/
+}

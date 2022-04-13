@@ -1,0 +1,154 @@
+body{
+    /*background: #aae3f7;*/
+    /*margin-bottom: 50px;*/
+    
+}
+
+/* Bordered form */
+/*form {
+    width:100%;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}*/
+
+/* Ne concerne que les header avec un titre formlogin */
+
+div[title="filtrage"]{
+  border:#1585dc 2px solid;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.btnFiltrage{   
+    background-color: #1585dc;
+    border-radius: 10px;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+}
+header[title="formlogin"]{
+    
+    height: 200px;
+    /*marge par rapport aux éléments extérieurs */
+    margin-top: 30px;
+    margin-bottom: 50px;
+    /*lien vers l'image choisie'*/
+    background-image: url("../img/med2.jpg");
+    /* Positionne et montre le haut de l'image' */
+    background-origin: content-box;
+    background-position: top;
+    /*l'image ne se répète pas' */
+    background-repeat: no-repeat;
+    /*l'image couvre le header' */
+    background-size: auto auto;
+   
+}
+
+header[title="listevisiteur"]{
+    
+    height: 200px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background-image: url("../img/med2.jpg");
+    /* positionne et montre le bas de l'image'  */
+    background-origin: content-box;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+   
+}
+
+footer{
+    
+    height: 20px;
+    margin-bottom: 50px;
+    /*background-image: url("../img/med1.jpg");
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    text-align: right;
+    font-weight: bold;
+    border: 1px #1585dc solid;
+    padding-right: 20px;
+   
+}
+
+
+p[title="copyright"]{
+    color: #1585dc;
+    font-family: fantasy;
+}
+
+p[title="tabvisiteur"]{
+    color: #1585dc;
+    font-family: fantasy;
+    margin-bottom: 20px;
+}
+
+thead[title="entetetabvisiteur"]{
+    background-color: #fa8d5e; /*orange*/
+    color: white;
+}
+
+.ligneTabVisitColor{
+    
+    background-color: #f9f9c2;
+    
+}
+/*img{
+    width: 100%;
+    max-height: 200px;
+}*/
+
+#container h1{
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+/**************Style pour élements formulaire *******/
+
+label{
+    color: #1585dc;
+    /*font-family: 'Dancing Script', cursive;*/
+    font-weight: bold;
+}
+h2[title="cnx"]{
+    color: #1585dc;
+    font-family: 'Dancing Script', cursive;
+}
+
+/* style pour les zone de saisie du formulaire */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #1585dc;
+    box-sizing: border-box;
+}
+
+/* style pour bouton formulaire*/
+input[type=submit] {
+    background-color: #1585dc;
+    border-radius: 10px;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+input[type=submit]:hover {
+    background-color: white;
+    color: #1585dc;
+    border: 1px solid #1585dc;
+}
+
+/******************************************/
